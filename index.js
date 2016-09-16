@@ -8,7 +8,7 @@ function createWindow () {
   win.webContents.openDevTools()
   win.on('closed', () => {
     win = nill
-  } )
+  }) 
 }
 
 app.on('ready', createWindow)
@@ -20,8 +20,6 @@ app.on('window-all-closed', () => {
 })
 
 app.on('activate', () => {
-  // On macOS it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
   if (win === null) {
     createWindow()
   }
