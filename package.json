@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "postinstall": "cd app && npm install",
     "pack": "build",
     "dist": "build",
     "dist:linux32": "build --linux --ia32",
